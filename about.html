@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Kulina Nusantara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B45309', // Amber 700
+                        secondary: '#1F2937', // Gray 800
+                        accent: '#F59E0B', // Amber 500
+                        batik: '#78350F', // Coklat Batik
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-batik-pattern {
+            background-color: #fffbeb;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23b45309' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-batik-pattern text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-md fixed w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center cursor-pointer group">
+                <div class="bg-primary text-white p-2 rounded-full mr-2 group-hover:bg-orange-800 transition">
+                    <i class="fa-solid fa-mortar-pestle text-lg"></i>
+                </div>
+                <span class="font-serif text-2xl font-bold text-secondary">Kulina<span class="text-primary">Nusantara</span></span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition">Beranda</a>
+                <a href="menu.html" class="text-gray-600 hover:text-primary transition">Menu</a>
+                <a href="about.html" class="text-primary font-bold border-b-2 border-primary">Tentang Kami</a>
+                <a href="contact.html" class="text-gray-600 hover:text-primary transition">Kontak</a>
+            </div>
+            <button class="md:hidden text-gray-600 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 shadow-lg">
+            <a href="index.html" class="block w-full text-left py-2 text-gray-600 hover:text-primary">Beranda</a>
+            <a href="menu.html" class="block w-full text-left py-2 text-gray-600 hover:text-primary">Menu</a>
+            <a href="about.html" class="block w-full text-left py-2 text-primary font-bold">Tentang Kami</a>
+            <a href="contact.html" class="block w-full text-left py-2 text-gray-600 hover:text-primary">Kontak</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-16">
+        <!-- Section Filosofi -->
+        <div class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2 relative">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-primary rounded-tl-3xl opacity-20"></div>
+                        <img src="https://res.cloudinary.com/rainforest-cruises/images/c_fill,g_auto/f_auto,q_auto/v1622207103/Indonesian-Food-Main/Indonesian-Food-Main.jpg" alt="Dapur Kami" class="rounded-lg shadow-xl relative z-10 w-full">
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-primary font-bold uppercase tracking-widest mb-2">Filosofi Kami</h3>
+                        <h2 class="font-serif text-4xl font-bold text-gray-800 mb-6">Melestarikan Rasa, Menjaga Budaya</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Kulina Nusantara berdiri dengan satu misi sederhana: memastikan resep nenek moyang tidak hilang ditelan zaman. Kami percaya bahwa setiap masakan Indonesia memiliki cerita dan jiwanya sendiri.
+                        </p>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            "Modern dalam penyajian, Tradisional dalam rasa" adalah motto yang kami pegang teguh.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 mt-8">
+                            <div class="bg-white p-4 rounded shadow">
+                                <h4 class="text-3xl font-bold text-primary">100%</h4>
+                                <p class="text-gray-600 font-serif">Rempah Asli</p>
+                            </div>
+                            <div class="bg-white p-4 rounded shadow">
+                                <h4 class="text-3xl font-bold text-primary">34</h4>
+                                <p class="text-gray-600 font-serif">Provinsi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Tim Chef -->
+        <div class="bg-white py-16 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="font-serif text-3xl font-bold text-gray-800 mb-12">Tim Dapur Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex flex-col items-center group">
+                        <div class="overflow-hidden rounded-full w-40 h-40 mb-4 shadow-lg border-4 border-white">
+                            <img src="https://images.unsplash.com/photo-1622021142947-da7dedc7c39a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Head Chef" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        </div>
+                        <h3 class="text-xl font-bold">Budi Santoso</h3>
+                        <p class="text-primary font-medium">Executive Chef</p>
+                    </div>
+                    <!-- Chef 2 -->
+                    <div class="flex flex-col items-center group">
+                        <div class="overflow-hidden rounded-full w-40 h-40 mb-4 shadow-lg border-4 border-white">
+                            <img src="https://www.top10asia.org/wp-content/uploads/2022/09/Renatta-Moeloek.jpg" alt="Sous Chef" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        </div>
+                        <h3 class="text-xl font-bold">Puti Renatta R Moeloek</h3>
+                        <p class="text-primary font-medium">Sous Chef</p>
+                    </div>
+                    <!-- Chef 3 -->
+                    <div class="flex flex-col items-center group">
+                        <div class="overflow-hidden rounded-full w-40 h-40 mb-4 shadow-lg border-4 border-white">
+                            <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pastry Chef" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        </div>
+                        <h3 class="text-xl font-bold">Rudi Hartono</h3>
+                        <p class="text-primary font-medium">Spesialis Jajanan Pasar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t-4 border-primary">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white p-1 rounded-full mr-2">
+                            <i class="fa-solid fa-mortar-pestle text-sm"></i>
+                        </div>
+                        <span class="font-serif text-xl font-bold">Kulina<span class="text-primary">Nusantara</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Bangga menyajikan cita rasa asli Indonesia kepada dunia. Setiap suapan adalah perjalanan budaya.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-accent">Menu Populer</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>Rendang Sapi</li>
+                        <li>Sate Madura</li>
+                        <li>Soto Betawi</li>
+                        <li>Nasi Goreng Kampung</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-accent">Jam Buka</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex justify-between max-w-[200px]"><span>Senin - Jumat</span> <span>10:00 - 22:00</span></li>
+                        <li class="flex justify-between max-w-[200px]"><span>Sabtu - Minggu</span> <span>10:00 - 23:00</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-accent">Berlangganan</h4>
+                    <form class="flex" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Email Anda" class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-l focus:outline-none text-sm focus:border-primary">
+                        <button class="bg-primary px-4 py-2 rounded-r hover:bg-orange-800 transition"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2023 Kulina Nusantara. Karya Anak Bangsa.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-primary"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-primary"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-primary"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
